@@ -1,0 +1,62 @@
+# Sao Paulo
+
+> Geotechnical engineering company in Brasil, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Analise Amplificacao Sismica](https://sao-paulo.geotecniabrasil1.com.br/analise-amplificacao-sismica/)
+- [Analise Estabilidade Taludes](https://sao-paulo.geotecniabrasil1.com.br/analise-estabilidade-taludes/)
+- [Analise Liquefacao Solos](https://sao-paulo.geotecniabrasil1.com.br/analise-liquefacao-solos/)
+- [Analise Recalque Diferencial](https://sao-paulo.geotecniabrasil1.com.br/analise-recalque-diferencial/)
+- [Analise Resposta Sismica Local](https://sao-paulo.geotecniabrasil1.com.br/analise-resposta-sismica-local/)
+- [Avaliacao Deslizamentos](https://sao-paulo.geotecniabrasil1.com.br/avaliacao-deslizamentos/)
+- [Avaliacao Pavimentos Existentes](https://sao-paulo.geotecniabrasil1.com.br/avaliacao-pavimentos-existentes/)
+- [Avaliacao Solos Colapsiveis](https://sao-paulo.geotecniabrasil1.com.br/avaliacao-solos-colapsiveis/)
+- [Avaliacao Solos Expansivos](https://sao-paulo.geotecniabrasil1.com.br/avaliacao-solos-expansivos/)
+- [Calculo Fator Seguranca](https://sao-paulo.geotecniabrasil1.com.br/calculo-fator-seguranca/)
+- [Caracterizacao Solos Residuais](https://sao-paulo.geotecniabrasil1.com.br/caracterizacao-solos-residuais/)
+- [Classificacao Solos](https://sao-paulo.geotecniabrasil1.com.br/classificacao-solos/)
+- [Cone Penetration Test](https://sao-paulo.geotecniabrasil1.com.br/cone-penetration-test/)
+- [Drenagem Viaria Geotecnica](https://sao-paulo.geotecniabrasil1.com.br/drenagem-viaria-geotecnica/)
+- [Ensaio Cisalhamento Direto](https://sao-paulo.geotecniabrasil1.com.br/ensaio-cisalhamento-direto/)
+- [Ensaio Compressao Simples](https://sao-paulo.geotecniabrasil1.com.br/ensaio-compressao-simples/)
+- [Ensaio Consolidacao Edometrica](https://sao-paulo.geotecniabrasil1.com.br/ensaio-consolidacao-edometrica/)
+- [Ensaio Densidade In Situ](https://sao-paulo.geotecniabrasil1.com.br/ensaio-densidade-in-situ/)
+- [Ensaio Infiltracao](https://sao-paulo.geotecniabrasil1.com.br/ensaio-infiltracao/)
+- [Ensaio Permeabilidade In Situ](https://sao-paulo.geotecniabrasil1.com.br/ensaio-permeabilidade-in-situ/)
+- [Ensaio Permeabilidade Laboratorio](https://sao-paulo.geotecniabrasil1.com.br/ensaio-permeabilidade-laboratorio/)
+- [Ensaio Placa Carga](https://sao-paulo.geotecniabrasil1.com.br/ensaio-placa-carga/)
+- [Ensaios In Situ](https://sao-paulo.geotecniabrasil1.com.br/ensaios-in-situ/)
+- [Escavacoes Subterraneas](https://sao-paulo.geotecniabrasil1.com.br/escavacoes-subterraneas/)
+- [Especificacao Geogrelhas](https://sao-paulo.geotecniabrasil1.com.br/especificacao-geogrelhas/)
+- [Especificacao Geomembranas](https://sao-paulo.geotecniabrasil1.com.br/especificacao-geomembranas/)
+- [Estabilizacao Cal Cimento](https://sao-paulo.geotecniabrasil1.com.br/estabilizacao-cal-cimento/)
+- [Estudo Cbr Projeto Viario](https://sao-paulo.geotecniabrasil1.com.br/estudo-cbr-projeto-viario/)
+- [Estudo Mecanica Solos](https://sao-paulo.geotecniabrasil1.com.br/estudo-mecanica-solos/)
+- [Exploracao](https://sao-paulo.geotecniabrasil1.com.br/exploracao/)
+- [Fundacoes](https://sao-paulo.geotecniabrasil1.com.br/fundacoes/)
+- [Geofisica](https://sao-paulo.geotecniabrasil1.com.br/geofisica/)
+- [Geotecnia Viaria](https://sao-paulo.geotecniabrasil1.com.br/geotecnia-viaria/)
+- [Instrumentacao Geotecnica](https://sao-paulo.geotecniabrasil1.com.br/instrumentacao-geotecnica/)
+- [Laboratorio](https://sao-paulo.geotecniabrasil1.com.br/laboratorio/)
+- [Limites Atterberg](https://sao-paulo.geotecniabrasil1.com.br/limites-atterberg/)
+- [Manejo Solos Organicos](https://sao-paulo.geotecniabrasil1.com.br/manejo-solos-organicos/)
+- [Melhoramento](https://sao-paulo.geotecniabrasil1.com.br/melhoramento/)
+- [Microtremores Hvsr](https://sao-paulo.geotecniabrasil1.com.br/microtremores-hvsr/)
+- [Microzoneamento Sismico](https://sao-paulo.geotecniabrasil1.com.br/microzoneamento-sismico/)
+- [Monitoramento Geotecnico Escavacoes](https://sao-paulo.geotecniabrasil1.com.br/monitoramento-geotecnico-escavacoes/)
+- [Monitoramento Geotecnico Taludes](https://sao-paulo.geotecniabrasil1.com.br/monitoramento-geotecnico-taludes/)
+- [Normal Ou Modificado](https://sao-paulo.geotecniabrasil1.com.br/normal-ou-modificado/)
+- [Peneiramento Hidrometro](https://sao-paulo.geotecniabrasil1.com.br/peneiramento-hidrometro/)
+- [Projeto Aterros Viarios](https://sao-paulo.geotecniabrasil1.com.br/projeto-aterros-viarios/)
+- [Projeto Compactacao Dinamica](https://sao-paulo.geotecniabrasil1.com.br/projeto-compactacao-dinamica/)
+- [Projeto Cortinas Estacas Pranchas](https://sao-paulo.geotecniabrasil1.com.br/projeto-cortinas-estacas-pranchas/)
+- [Projeto Fundacoes Superficiais](https://sao-paulo.geotecniabrasil1.com.br/projeto-fundacoes-superficiais/)
+- [Projeto Geocelulas](https://sao-paulo.geotecniabrasil1.com.br/projeto-geocelulas/)
+- [Projeto Injecoes](https://sao-paulo.geotecniabrasil1.com.br/projeto-injecoes/)
+
+## Contact
+- Website: https://sao-paulo.geotecniabrasil1.com.br/
+
+## About
+This page provides information about geotechnical engineering services available in Brasil.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
