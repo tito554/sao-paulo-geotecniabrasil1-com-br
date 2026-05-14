@@ -123,6 +123,50 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -167,7 +211,9 @@ header.hero, .hero { position: relative !important; }
 <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Instrumentação geotécnica para recalque</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Instalação de marcos superficiais e profundos, inclinômetros e piezômetros para monitoramento contínuo de deslocamentos verticais e horizontais em obras e edificações vizinhas em São Paulo.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Ensaios de adensamento e consolidação</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Ensaios de laboratório (oedométrico) em amostras indeformadas para determinar o coeficiente de compressão (Cc), o índice de compressão (Cc) e a tensão de pré-adensamento, parâmetros essenciais para prever recalques.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Modelagem numérica de recalques</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Simulação por elementos finitos (software Plaxis ou Abaqus) considerando o perfil geotécnico local, carregamento da estrutura e histórico de tensões para estimar recalques diferenciais com precisão.</p></div>
 </div>
 </div>
-</section>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">Este serviço complementa o nosso <a href="/ensaios-in-situ/">ensaios in situ</a> para uma análise integral do projeto.</p></div></section>
+
+    </section>
 <section class="section"><h2>Normas aplicáveis</h2><p>ABNT NBR 6122:2019 – Projeto e execução de fundações, ABNT NBR 11682:2009 – Estabilidade de encostas (aplicável a taludes urbanos), ABNT NBR 8044:1983 – Projeto geotécnico (diretrizes gerais), ABNT NBR 12007 – Teste de consolidação unidimensional (ensaio de adensamento)</p></section>
 <section class="section"><h2>Perguntas comuns</h2><details><summary>O que causa o recalque diferencial em solos de São Paulo?</summary><p>As principais causas são a variação lateral de espessura e compressibilidade das camadas de argila orgânica (comuns nas várzeas dos rios Tietê e Pinheiros), a saturação sazonal do solo devido ao clima úmido e o rebaixamento temporário do lençol freático durante escavações. A heterogeneidade dos depósitos sedimentares da Bacia de São Paulo faz com que dois pontos próximos apresentem comportamentos distintos.</p></details><details><summary>Qual a diferença entre recalque total e recalque diferencial?</summary><p>Recalque total é o deslocamento vertical absoluto de um ponto da fundação. Recalque diferencial é a diferença de recalque entre dois pontos da mesma estrutura, medido como a distorção angular (relação entre a diferença de recalque e a distância entre os pontos). A NBR 6122:2019 limita a distorção angular a 1/300 para estruturas de concreto armado, valor que orienta o projeto de fundações em São Paulo.</p></details><details><summary>Quanto custa uma análise de recalque diferencial em São Paulo?</summary><p>O custo varia conforme o porte da edificação e a complexidade do terreno, situando-se entre R$ 1.890 e R$ 4.560 para um estudo básico que inclui ensaios de adensamento, monitoramento topográfico por 30 dias e relatório técnico. Projetos com modelagem numérica e instrumentação contínua podem ultrapassar esse valor.</p></details><details><summary>Como prevenir recalques diferenciais em obras na zona sul de São Paulo?</summary><p>A prevenção começa com uma investigação geotécnica detalhada que inclua sondagens SPT e ensaios de adensamento em amostras indeformadas. Em solos moles da zona sul (bairros como Santo Amaro e Jardim Ângela), recomenda-se o uso de fundações profundas (estacas) ou a execução de sobrecarga temporária (pré-carregamento) para acelerar os recalques antes da construção. O monitoramento durante a obra é indispensável.</p></details><details><summary>Qual a norma brasileira que regula o recalque diferencial?</summary><p>A principal norma é a ABNT NBR 6122:2019 (Projeto e execução de fundações), que define critérios de recalque admissível e distorção angular para diferentes tipos de estrutura. Complementarmente, a NBR 8044:1983 fornece diretrizes para projetos geotécnicos e a NBR 11682:2009 trata da estabilidade de encostas, relevante em terrenos com declive na cidade.</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">

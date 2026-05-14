@@ -123,6 +123,50 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -167,7 +211,9 @@ header.hero, .hero { position: relative !important; }
 <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Ensaios de adensamento oedométrico</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Determinação do Cc, cv e OCR em amostras indeformadas de argila mole, com corpos de prova de 50 mm de diâmetro e carregamento em estágios até 800 kPa.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Instrumentação de campo</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Instalação e leitura de placas de recalque, piezômetros de corda vibrante e marcos superficiais para monitorar a evolução do adensamento durante a pré-carga.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Relatório técnico de dimensionamento</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Cálculo da altura de aterro, tempo de pré-carga e recalque estimado, com base nos parâmetros de laboratório e nas condições de contorno da obra em São Paulo.</p></div>
 </div>
 </div>
-</section>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">Este serviço complementa o nosso <a href="/ensaios-in-situ/">ensaios in situ</a> para uma análise integral do projeto.</p></div></section>
+
+    </section>
 <section class="section"><h2>Normas aplicáveis</h2><p>NBR 6122:2019 — Projeto e execução de fundações, NBR 6484:2020 — Sondagem de simples reconhecimento (SPT), ABNT NBR 12007 — Ensaio de adensamento unidimensional</p></section>
 <section class="section"><h2>Perguntas comuns</h2><details><summary>O que é pré-carga sem sobrecarga e quando usar em São Paulo?</summary><p>É a aplicação do peso do próprio aterro sobre o solo mole para acelerar o adensamento, sem adicionar lastro extra. Usa-se em aterros rodoviários, pátios industriais e plataformas logísticas onde o recalque admissível é da ordem de 15 a 30 cm. Em São Paulo, é comum nas várzeas do Tietê e do Pinheiros.</p></details><details><summary>Qual o custo médio de um projeto de pré-carga (sem sobrecarga) em São Paulo?</summary><p></p></details><details><summary>Quanto tempo leva a pré-carga em solo mole paulistano?</summary><p>Para argilas moles com cv em torno de 5x10⁻⁴ cm²/s e espessura de 8 m, o tempo para atingir 90% do recalque primário varia de 6 a 12 meses. O monitoramento em campo confirma quando o recalque estabiliza e o aterro pode ser liberado.</p></details><details><summary>Qual a diferença entre pré-carga com e sem sobrecarga?</summary><p>Na pré-carga com sobrecarga, aplica-se uma camada extra de material (lastro) acima do aterro final para acelerar ainda mais o adensamento. Na sem sobrecarga, usa-se apenas o peso do aterro projetado. A escolha depende do OCR do solo e do tempo disponível na obra.</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">

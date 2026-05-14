@@ -123,6 +123,50 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -167,7 +211,9 @@ header.hero, .hero { position: relative !important; }
 <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Ensaio Lefranc em carga constante</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Aplicado em solos com permeabilidade média a alta (k &gt; 10⁻⁶ m/s). Utilizamos obturador simples e medidor de vazão magnético para registrar a estabilização do fluxo em até 60 minutos.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Ensaio Lefranc em carga variável</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Indicado para solos de baixa permeabilidade (k entre 10⁻⁶ e 10⁻⁸ m/s). O rebaixamento do nível d'água dentro do furo é monitorado com transdutor de pressão submersível, garantindo leituras contínuas.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Ensaio Lugeon em maciço rochoso</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Executado em furos com obturador duplo para isolar trechos de 1 a 3 m em rochas fraturadas. Os resultados são expressos em unidades Lugeon (1 UL = 1 L/min/m a 1 MPa), fundamentais para projetos de cortinas de injeção e barragens.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">04</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Relatório técnico com modelo hidrogeológico</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Interpretamos os dados de permeabilidade in situ e correlacionamos com perfis de sondagem SPT, gerando um modelo 2D/3D do fluxo subterrâneo para o local da obra. Inclui recomendações para rebaixamento e drenagem.</p></div>
 </div>
 </div>
-</section>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">Este serviço complementa o nosso <a href="/ensaios-in-situ/">ensaios in situ</a> para uma análise integral do projeto.</p></div></section>
+
+    </section>
 <section class="section"><h2>Normas aplicáveis</h2><p>ABNT NBR 14141:2013 — Solo — Ensaio de permeabilidade em furo de sondagem, ABNT NBR 13420:2015 — Rocha — Ensaio de permeabilidade em maciço rochoso (Lugeon), ISRM Suggested Method for Lugeon Test (1977, revisado 2004), ABNT NBR — Standard Test Method for Field Measurement of Hydraulic Conductivity Using Borehole Infiltration</p></section>
 <section class="section"><h2>Perguntas comuns</h2><details><summary>Qual a diferença entre o ensaio Lefranc e o ensaio Lugeon?</summary><p>O ensaio Lefranc é aplicado em solos e mede a permeabilidade sob carga constante ou variável, sem pressurização artificial. O ensaio Lugeon é usado em maciços rochosos fraturados, aplicando pressões controladas (até 1,0 MPa) para determinar a perda de água e classificar o grau de fraturamento. Ambos são normatizados no Brasil pelas ABNT NBR 14141 e ABNT NBR 13420.</p></details><details><summary>Em quais tipos de solo de São Paulo o ensaio Lefranc é mais indicado?</summary><p>O ensaio Lefranc é especialmente indicado para solos residuais de granito e gnaisse da borda da Bacia Sedimentar de São Paulo, onde a permeabilidade varia de 10⁻⁵ a 10⁻⁸ m/s. Também é recomendado para aterros compactados e solos colapsíveis da Zona Sul, onde o fluxo preferencial pode comprometer fundações superficiais.</p></details><details><summary>Quanto tempo leva para executar um ensaio de permeabilidade in situ em São Paulo?</summary><p>Cada trecho ensaiado leva entre 30 e 90 minutos, dependendo do método (carga constante ou variável) e da permeabilidade do material. Para um furo de 10 m com 3 trechos, a campanha completa (incluindo instalação do obturador e medições) leva de 4 a 6 horas em campo. O prazo total, com relatório, é de 5 a 10 dias úteis.</p></details><details><summary>O ensaio de permeabilidade in situ substitui o ensaio de permeabilidade em laboratório?</summary><p>Não. O ensaio in situ mede a condutividade hidráulica do maciço em escala real, considerando fraturas e heterogeneidades que o ensaio de laboratório em amostra indeformada não capta. O ideal é combinar ambos: o laboratório fornece o valor de matriz (k matriz) e o campo fornece o valor de maciço (k maciço), que pode ser 10 a 100 vezes maior em solos residuais paulistanos.</p></details></section>
 <section class="block map-block" style="padding:3rem 1.5rem">

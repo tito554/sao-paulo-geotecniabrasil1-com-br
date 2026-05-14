@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="pt">
-<head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="description" content="Projeto de pavimento rígido em São Paulo — Juntos resolvemos os desafios do amanhã">
+<head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="description" content="Projeto de pavimento rígido em São Paulo com análise geotécnica especializada. Soluções duráveis e seguras para sua obra. Consulte-nos!">
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Projeto de pavimento rígido em São Paulo</title>
+<title>Projeto de Pavimento Rígido em São Paulo | Geotécnica</title>
 <meta property="og:site_name" content="Geotecnia Brasil">
 <meta property="og:image" content="https://sao-paulo.geotecniabrasil1.com.br/img/aislacion-sismica-1.webp">
 <meta content="Projeto de pavimento rígido em São Paulo. Dimensionamento de placas de concreto para vias urbanas e rodovias. Normas ABNT NBR e DNIT. Equipe técnica especializa" name="description"/>
@@ -123,6 +123,50 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){aside{position:relative}.content-area{display:flex;gap:1rem}}
+@media (max-width:900px){aside{width:100% !important;position:static !important;height:auto !important}.navbar{flex-wrap:wrap}}
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -167,7 +211,9 @@ header.hero, .hero { position: relative !important; }
 <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Dimensionamento estrutural de placas</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Cálculo de espessura, juntas e armadura para vias urbanas, rodovias e pátios industriais, conforme método PCA e normas DNIT.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Projeto de drenagem e sub-base</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Definição de camadas granulares, sistemas de drenagem superficial e profunda para garantir a vida útil do pavimento.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Especificação de materiais e controle tecnológico</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Definição do traço do concreto, resistência à tração na flexão, módulo de elasticidade e ensaios de laboratório.</p></div>
 </div>
 </div>
-</section>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">Este serviço complementa o nosso <a href="/ensaios-in-situ/">ensaios in situ</a> para uma análise integral do projeto.</p></div></section>
+
+    </section>
 <section class="section"><h2>Normas aplicáveis</h2><p>ABNT NBR 12255:1992 (Execução de pavimento rígido), DNIT 061/2004 – ES (Pavimento rígido – Especificação de serviço), Manual de Pavimentação do DNIT (2020), ABNT NBR 6118:2023 (Projeto de estruturas de concreto)</p></section>
 <section class="section"><h2>Perguntas comuns</h2><details><summary>Qual a diferença entre pavimento rígido e flexível para São Paulo?</summary><p>O pavimento rígido usa placas de concreto cimento como revestimento, distribuindo as cargas por flexão. Já o flexível utiliza camadas asfálticas. Em São Paulo, o rígido é mais indicado para corredores de ônibus e vias de tráfego pesado, pois tem maior durabilidade e resistência à deformação permanente.</p></details><details><summary>Quanto custa um projeto de pavimento rígido em São Paulo?</summary><p>O custo referencial para um projeto de pavimento rígido em São Paulo varia entre R$ 4.610 e R$ 14.790, dependendo da extensão da via, da complexidade geotécnica e dos ensaios necessários. O valor inclui dimensionamento, especificações e relatório técnico.</p></details><details><summary>Quais ensaios de solo são necessários antes do projeto?</summary><p>São necessários ensaios de caracterização (granulometria, <a data-interlink="1" href="../limites-atterberg/">limites de Atterberg</a>), compactação (Proctor), CBR e determinação do módulo de reação (k). Em São Paulo, recomenda-se também o <a data-interlink="1" href="../ensaio-placa-carga/">ensaio de placa de carga</a> para calibrar o módulo de deformação do subleito.</p></details><details><summary>Qual a vida útil de um pavimento rígido bem projetado?</summary><p>Um pavimento rígido bem projetado e executado em São Paulo pode durar de 20 a 30 anos sem necessidade de recapeamento, desde que haja manutenção periódica das juntas e do sistema de drenagem.</p></details><details><summary>O pavimento rígido é mais caro que o flexível?</summary><p>O custo inicial do pavimento rígido é geralmente 20% a 30% maior que o flexível. Porém, considerando a vida útil mais longa e a menor necessidade de manutenção, o custo anualizado pode ser inferior, especialmente em vias de alto tráfego como as de São Paulo.</p></details></section>
 <section class="block video-block" style="padding:2rem 1.5rem"><div style="max-width:720px;margin:0 auto"><h2 style="margin-bottom:1rem;font-weight:700;font-size:1.4rem">Vídeo explicativo</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px"><iframe src="https://www.youtube.com/embed/gBjhYRBx0OM" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allowfullscreen></iframe></div></div></section>
