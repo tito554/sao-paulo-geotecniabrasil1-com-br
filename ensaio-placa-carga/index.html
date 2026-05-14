@@ -167,6 +167,37 @@ aside .cat-name,aside .sb-home,aside nav a{color:inherit}
 aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
 aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 </style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
 </head><body>
 <nav class="navbar">
 <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
@@ -174,7 +205,6 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <div class="logo-text">Sao Paulo Br</div></a></div>
 <div class="nav">
 <div class="nav-item has-dd"><a href="../exploracao/" class="nav-cat-link">Exploração</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../cone-penetration-test/">Ensaio CPT (Cone Penetration Test)</a><a href="../standard-penetration-test/">Ensaio SPT (Standard Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="../ensaios-in-situ/" class="nav-cat-link">Ensaios in situ</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../ensaio-densidade-in-situ/">Ensaio de densidade in situ (método do cone de areia)</a><a href="../ensaio-infiltracao/">Ensaio de infiltração (Porchet/Duplo anel)</a><a href="../ensaio-placa-carga/">Ensaio de placa de carga (PLT)</a><a href="../ensaio-permeabilidade-in-situ/">Ensaio de permeabilidade in situ (Lefranc/Lugeon)</a></div></div><div class="nav-item has-dd"><a href="../laboratorio/" class="nav-cat-link">Laboratório</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../peneiramento-hidrometro/">Análise granulométrica (peneiramento + hidrômetro)</a><a href="../caracterizacao-solos-residuais/">Caracterização de solos residuais</a><a href="../classificacao-solos/">Classificação de solos (USCS/AASHTO)</a><a href="../ensaio-compressao-simples/">Ensaio de compressão simples (UCS)</a><a href="../ensaio-consolidacao-edometrica/">Ensaio de consolidação edométrica (Oedometer)</a><a href="../ensaio-cisalhamento-direto/">Ensaio de cisalhamento direto</a><a href="../normal-ou-modificado/">Ensaio Proctor (Normal ou Modificado)</a><a href="../estudo-mecanica-solos/">Estudo de mecânica dos solos</a><a href="../limites-atterberg/">Limites de Atterberg</a><a href="../ensaio-permeabilidade-laboratorio/">Ensaio de permeabilidade em laboratório (carga variável/constante)</a></div></div><div class="nav-item has-dd"><a href="../geofisica/" class="nav-cat-link">Geofísica</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../velocidade-ondas-cisalhamento/">MASW / VS30 (velocidade de ondas de cisalhamento)</a><a href="../microtremores-hvsr/">Microtremores HVSR (Método Nakamura)</a><a href="../resistividade-eletrica-sev/">Resistividade elétrica / SEV (Sondagem Elétrica Vertical)</a></div></div><div class="nav-item has-dd"><a href="../fundacoes/" class="nav-cat-link">Fundações</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analise-recalque-diferencial/">Análise de recalque diferencial</a><a href="../projeto-fundacoes-superficiais/">Projeto de fundações superficiais</a><a href="../projeto-micropilotes/">Projeto de micropilotes</a><a href="../avaliacao-solos-colapsiveis/">Avaliação de solos colapsíveis</a><a href="../avaliacao-solos-expansivos/">Avaliação de solos expansivos</a></div></div><div class="nav-item has-dd"><a href="../taludes-e-muros/" class="nav-cat-link">Taludes e muros</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analise-estabilidade-taludes/">Análise de estabilidade de taludes</a><a href="../calculo-fator-seguranca/">Cálculo do fator de segurança (FS)</a><a href="../projeto-geocelulas/">Projeto com geocélulas</a><a href="../projeto-muros-contencao/">Projeto de muros de contenção</a><a href="../projeto-muros-mse/">Projeto de muros MSE (solo reforçado)</a><a href="../projeto-cortinas-estacas-pranchas/">Projeto de cortinas de estacas pranchas</a><a href="../avaliacao-deslizamentos/">Avaliação de deslizamentos</a><a href="../monitoramento-geotecnico-taludes/">Monitoramento geotécnico de taludes (mensal)</a></div></div><div class="nav-item has-dd"><a href="../melhoramento/" class="nav-cat-link">Melhoramento</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../projeto-compactacao-dinamica/">Projeto de compactação dinâmica</a><a href="../projeto-injecoes/">Projeto de injeções (grouting)</a><a href="../projeto-pre-carga/">Projeto de pré-carga (sem sobrecarga)</a><a href="../projeto-vibrocompactacao/">Projeto de vibrocompactação</a><a href="../especificacao-geogrelhas/">Especificação de geogrelhas</a><a href="../especificacao-geomembranas/">Especificação de geomembranas</a><a href="../estabilizacao-cal-cimento/">Estabilização com cal e cimento</a><a href="../instrumentacao-geotecnica/">Instrumentação geotécnica (projeto e instalação)</a><a href="../manejo-solos-organicos/">Manejo de solos orgânicos</a></div></div><div class="nav-item has-dd"><a href="../escavacoes-subterraneas/" class="nav-cat-link">Escavações</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../monitoramento-geotecnico-escavacoes/">Monitoramento geotécnico de escavações</a></div></div><div class="nav-item has-dd"><a href="../geotecnia-viaria/" class="nav-cat-link">Geotecnia viária</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../projeto-pavimento-flexivel/">Projeto de pavimento flexível</a><a href="../projeto-pavimento-rigido/">Projeto de pavimento rígido</a><a href="../projeto-aterros-viarios/">Projeto de aterros viários</a><a href="../drenagem-viaria-geotecnica/">Drenagem viária geotécnica</a><a href="../estudo-cbr-projeto-viario/">Estudo CBR para projeto viário</a><a href="../avaliacao-pavimentos-existentes/">Avaliação de pavimentos existentes</a></div></div><div class="nav-item has-dd"><a href="../sismica/" class="nav-cat-link">Sísmica</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../analise-amplificacao-sismica/">Análise de amplificação sísmica</a><a href="../analise-liquefacao-solos/">Análise de liquefação de solos</a><a href="../analise-resposta-sismica-local/">Análise de resposta sísmica do local</a><a href="../projeto-isolamento-sismico-base/">Projeto de isolamento sísmico de base</a><a href="../microzoneamento-sismico/">Microzoneamento sísmico</a></div></div>
-<a class="home-btn" href="../" style="background:transparent;border:1px solid currentColor;color:inherit;padding:.5rem .9rem;font-size:.82rem;font-weight:700;text-transform:uppercase;text-decoration:none;border-radius:4px;margin-right:.5rem">INÍCIO</a><button class="cta-btn" data-email="contato@geotecniabrasil1.com.br" type="button">CONTATO</button>
 </div>
 </nav>
 <header class="hero"><div class="hero-inner">
@@ -233,7 +263,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap colaboradores &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([-23.5505,-46.6333],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("São Paulo");
+          L.marker([-23.5505,-46.6333],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m).bindPopup("São Paulo");
         })();
         </script>
 <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
